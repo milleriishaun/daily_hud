@@ -1,0 +1,57 @@
+{
+  "name": "dailyhud",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "engines": {
+    "node": "10.16.0"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-fetch": "^2.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "react-textarea-autosize": "^7.1.0",
+    "react-tooltip": "^3.10.0",
+    "skycons-component": "^1.1.2",
+    "styled-components": "^4.3.2",
+    "yarn": "^1.19.1"
+  },
+  "devDependencies": {},
+  "proxy": "http://localhost:3001/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploytest": "NODE_ENV=production node server.js",
+    "server": "node server.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milleriishaun/dailyHUD.git"
+  },
+  "author": "milleriishaun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milleriishaun/dailyHUD/issues"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "https://dailyhud.herokuapp.com/"
+}

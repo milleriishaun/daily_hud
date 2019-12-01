@@ -1,31 +1,53 @@
 {
-  "name": "daily_hud",
-  "version": "0.1.0",
-  "private": true,
+  "name": "dailyhud",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "10.16.0"
+  },
+  "main": "server.js",
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "bootstrap": "^4.3.1",
+    "compression": "^1.7.4",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "react-textarea-autosize": "^7.1.0",
+    "react-tooltip": "^3.10.0",
+    "skycons-component": "^1.1.2",
+    "styled-components": "^4.3.2",
+    "yarn": "^1.19.1"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "node start-client.js",
     "build": "react-scripts build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "predeploytest": "NODE_ENV=production node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ."
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milleriishaun/dailyHUD.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "milleriishaun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milleriishaun/dailyHUD/issues"
+  },
+  "homepage": "https://dailyhud.herokuapp.com/"
 }

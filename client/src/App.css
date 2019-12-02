@@ -114,7 +114,7 @@ body {
 .card-img-edit {
   border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem !important;
   width: 25vw !important;
-  height: 60vh;
+  height: 70vh;
   object-fit: cover;
 }
 
@@ -142,18 +142,16 @@ body {
 .card-img-edit-links {
   border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem !important;
   opacity: 0.8;
-  width: 13.5vw !important;
-  height: 5vh;
-  object-fit: fill;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin: 0;
+  width: 100% !important;
+  max-width: 13vw !important;
+  height: 7vh;
+  object-fit: cover;
   transform: scale(1.1);
 }
 
 .card-img-size-limits-links {
-  width: 100%;
-  max-width: 100vw;
+  /* width: 100% !important;
+  max-width: 13vw !important; */
 }
 
 .hovereffect {
@@ -373,7 +371,7 @@ form ::placeholder {
 
 .pomodoro-backboard {
   width: 20vw !important;
-  height: 40vh;
+  height: 60vh;
   background-color: var(--mainWhite);
   border-radius: 0.5rem;
   opacity: 0.25;

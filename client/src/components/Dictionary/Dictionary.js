@@ -121,7 +121,7 @@ const DictionaryWrapper = styled.div`
   border-color: #fefefe;
   border-radius: 0.5rem;
   width: 18rem;
-  height: 23.5rem;
+  height: 60vh;
   // font-size was the culprit changing the size of the font-awesome icons,
   // thus changing the margin-bottom of the words too
   // font-size: 1.5rem;

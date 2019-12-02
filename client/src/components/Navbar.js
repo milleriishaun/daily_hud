@@ -27,8 +27,8 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  padding-top: 2vh;
-  padding-bottom: 1vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
   // font-size: 2rem;
   // background: url("../img/green_branch_background.jpg");
 `;

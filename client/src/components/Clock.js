@@ -25,7 +25,7 @@ export default class Clock extends Component {
 const ClockWrapper = styled.div`
   color: var(--mainBlue);
   font-size: 3rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
   // background: rgba(50, 0, 200, 0.3);
 `;

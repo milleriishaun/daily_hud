@@ -1,4 +1,6 @@
-# ![hud] DailyHUD
+# ![hud]
+
+# [DailyHUD](https://daily-hud.herokuapp.com/ "view on Heroku")
 
 ###### _...get more done with less_
 
@@ -21,6 +23,6 @@ Current project status: _continuing_
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Start DailyHUD:  
-`npm start`
+`yarn start`
 
 [hud]: https://i.imgur.com/HMjYzjP.png
